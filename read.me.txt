@@ -1,0 +1,4 @@
+Actualice la página en su navegador y pregúntese ¿Puedo diseñar toda mi web usando GRID? Porqué se
+dan estos cambios entre tan pocas líneas de diseño CSS.
+
+Si es posible para estructuras pequeñas, ya que esta técnica permite definir filas y columnas de manera explícita, asignar áreas a los distintos elementos y controlar la distribución del espacio en dos dimensiones (horizontal y vertical). Con pocas líneas de código, como display: grid y grid-template-areas, se pueden lograr cambios significativos en la organización de la interfaz sin necesidad de modificar el HTML. Aunque para proyectos muy grandes es muy complicado de llevar a cabo.
