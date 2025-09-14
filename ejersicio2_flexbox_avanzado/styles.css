@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.hdr,
+.ftr {
+    background: #0ea5e9;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Contenedor principal */
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    padding: 1rem;
+}
+
+/* Ítems */
+.item {
+    flex: 1 1 180px;
+    min-height: 80px;
+    display: grid;
+    place-items: center;
+    background: #eef2f6;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* Demostración de order y reordenamiento sin tocar HTML */
+.a {
+    order: 3;
+}
+
+.b {
+    order: 1;
+}
+
+.c {
+    order: 2;
+}
+
+.d {
+    order: 5;
+}
+
+.e {
+    order: 4;
+}
+
+/* Cambia el flujo bajo cierto ancho */
+@media (max-width: 720px) {
+    .box {
+        flex-direction: column;
+    }
+
+    /* reordenado alterno solo con CSS */
+    .a {
+        order: 1;
+    }
+
+    .b {
+        order: 2;
+    }
+
+    .c {
+        order: 3;
+    }
+
+    .d {
+        order: 4;
+    }
+
+    .e {
+        order: 5;
+    }
+}
+
+.controls {
+    color: #64748b;
+    margin-top: 1rem;
+}
